@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+p{
+  padding: 0;
+  margin: 0;
+}

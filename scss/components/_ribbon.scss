@@ -1,0 +1,16 @@
+@use "../base" as *;
+
+.ribbon {
+  padding: 1rem;
+
+  &--success {
+    background-color: theme-color(success);
+    color: white;
+  }
+
+  @include screen-lg {
+    &__text {
+      @include flex_8;
+    }
+  }
+}

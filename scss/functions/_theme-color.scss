@@ -1,0 +1,6 @@
+@use "sass:map";
+@use  "../variables" as *;
+
+@function theme-color($color-name){
+    @return map.get($map: $colors, $key: $color-name);
+}

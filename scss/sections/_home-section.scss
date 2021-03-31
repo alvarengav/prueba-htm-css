@@ -1,0 +1,77 @@
+@use "../base" as base;
+
+.home-section {
+  position: relative;
+  @include base.background-image ("/assets/images/shutterstock_1485981242.png");
+  height: 100vh;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__card {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-100%);
+    max-width: 1000px;
+    opacity: .8;
+    margin: 1rem;
+  }
+
+  &__ribbon {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__ribbon-btn {
+    display: block;
+    font-weight: 700;
+
+    padding: {
+      left: 2rem;
+      right: 2rem;
+    };
+    margin: auto{
+    top: 1rem;
+    }
+  }
+
+  @include base.screen-lg {
+    &__card {
+      transform: none;
+      padding-bottom: 10rem;
+      width: 95%;
+      margin: 0;
+
+      //centrando
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__ribbon {
+      width: 100%;
+    }
+
+    &__ribbon-container {
+      max-width: 1000px;
+      display: flex;
+      align-items: center;
+
+      margin: {
+        left: auto;
+        right: auto;
+      };
+    }
+
+    &__ribbon-btn {
+      margin: 0{
+      left: auto;
+      }
+
+      padding: {
+        left: 4rem;
+        right: 4rem;
+      };
+    }
+  }
+}
