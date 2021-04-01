@@ -1,0 +1,7 @@
+@use "../base" as *;
+
+@each $color-name, $color in $colors {
+  .text-#{$color-name} {
+    color: $color;
+  }
+}

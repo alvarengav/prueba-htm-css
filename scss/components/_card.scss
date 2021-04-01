@@ -5,18 +5,6 @@
   padding: 1rem 1.5rem;
   border-radius: .5rem;
 
-  &__text {
-    color: theme-color(muted);
-  }
-
-  &--success {
-    & .card {
-      &__title {
-        color: theme-color(success);
-      }
-    }
-  }
-
   @include screen-md {
     &__title {
       font-size: 2rem;

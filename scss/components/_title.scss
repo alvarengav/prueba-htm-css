@@ -1,0 +1,9 @@
+@use "../base" as *;
+
+.title {
+  color: theme-color(primary);
+
+  &_success {
+    color: theme-color(success);
+  }
+}

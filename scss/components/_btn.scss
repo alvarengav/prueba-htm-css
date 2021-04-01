@@ -16,14 +16,14 @@
   padding: .375rem .75rem;
   font-size: 1rem;
 
-  &--rounded {
+  &_rounded {
     border-radius: 50px;
   }
 
   &-light {
     background-color: theme-color(light);
 
-    &--success{
+    &_success{
         color: theme-color(success);
     }
   }

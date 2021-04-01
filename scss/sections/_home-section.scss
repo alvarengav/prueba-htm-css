@@ -1,6 +1,6 @@
 @use "../base" as base;
 
-.home-section {
+.banner-section {
   position: relative;
   @include base.background-image ("/assets/images/shutterstock_1485981242.png");
   height: 100vh;
